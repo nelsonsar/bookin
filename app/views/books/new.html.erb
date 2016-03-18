@@ -1,0 +1,15 @@
+<%= form_for(@book) do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :author %>
+    <%= form.text_field :author %>
+  </div>
+  <div>
+    <%= form.label :tags %>
+    <%= form.text_field :tags %>
+  </div>
+  <%= submit_tag 'Create' %>
+<% end %>
